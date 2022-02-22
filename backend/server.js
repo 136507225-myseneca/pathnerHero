@@ -26,9 +26,9 @@ app.use(
     proxy: true,
     name: 'token',
     cookie: {
-      // sameSite: 'none',
-      // secure: true,
-      // httpOnly: false,
+      sameSite: 'none',
+      secure: true,
+      httpOnly: false,
       maxAge: 1000 * 60 * 60 * 24 * 7, // One Week
     },
   })

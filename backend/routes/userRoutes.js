@@ -19,11 +19,11 @@ router.get(
   '/auth/spotify/callback',
   passport.authenticate('spotify', {
     failureMessage: 'Cannot login with spotify, please try again later!',
-    successRedirect: 'http://localhost:3000',
+    successRedirect: process.env.website_url,
     failureRedirect: '/login/failed',
   }),
   (req, res) => {
-    res.redirect('http://localhost:3000')
+    res.redirect(process.env.website_url)
   }
 )
 

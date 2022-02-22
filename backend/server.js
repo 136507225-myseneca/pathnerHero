@@ -29,7 +29,10 @@ app.use(
     name: 'token',
     cookie: {
       // sameSite: 'none',
-      // secure: true,
+      secure:
+        process.env.NODE_ENV && process.env.NODE_ENV == 'production'
+          ? true
+          : false,
       // httpOnly: false,
       maxAge: 1000 * 60 * 60 * 24 * 7, // One Week
     },

@@ -119,10 +119,7 @@ const Header: FC<Props> = (props: Props) => {
     )
   )
   const handleLogin = () => {
-    window.open(
-      `${process.env.React_App_API_URL}/api/users/auth/spotify`,
-      '_self'
-    )
+    window.open(`/api/users/auth/spotify`, '_self')
   }
   const handelGetLibary = () => {
     if (!authenticated) {

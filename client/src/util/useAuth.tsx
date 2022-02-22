@@ -23,7 +23,7 @@ export default function useAuth() {
 
     const interval = setInterval(() => {
       axios
-        .post(`${process.env.React_App_API_URL}/api/users/auth/refresh`, {
+        .post(`/api/users/auth/refresh`, {
           refreshToken2,
           _id,
         })

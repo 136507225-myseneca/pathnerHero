@@ -20,7 +20,7 @@ const App: FC = () => {
   useEffect(() => {
     const getUser = async () => {
       const response = await axios
-        .get(`${process.env.React_App_API_URL}/api/users/auth/login`, {
+        .get(`/api/users/auth/login`, {
           withCredentials: true,
         })
         .catch((err) => {

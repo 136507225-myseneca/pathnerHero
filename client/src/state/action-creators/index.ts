@@ -16,7 +16,7 @@ export const setUser = (payload: object) => {
 export const removeUser = () => {
   return async (dispatch: Dispatch<Action>) => {
     await axios
-      .get(`${process.env.React_App_API_URL}/api/users/auth/logout`, {
+      .get(`/api/users/auth/logout`, {
         withCredentials: true,
       })
       .catch((err) => {
@@ -41,7 +41,7 @@ export const getLibary = (spotifyId: string) => {
   return async (dispatch: Dispatch<Action>) => {
     const { data }: AxiosResponse | any = await axios
       .get(
-        `${process.env.React_App_API_URL}/api/users/auth/libary/${spotifyId}`,
+        `/api/users/auth/libary/${spotifyId}`,
         {
           withCredentials: true,
         }
@@ -61,7 +61,7 @@ export const getLibary = (spotifyId: string) => {
 export const addTrack = (track: object) => {
   return async (dispatch: Dispatch<Action>) => {
     const { data }: AxiosResponse | any = await axios
-      .post(`${process.env.React_App_API_URL}/api/users/auth/libary`, track, { withCredentials: true })
+      .post(`/api/users/auth/libary`, track, { withCredentials: true })
       .catch((err) => {
         console.log(err)
       })
@@ -90,7 +90,7 @@ export const addTrack = (track: object) => {
 export const deleteTrack = (id: any) => {
   return async (dispatch: Dispatch<Action>) => {
     const { data }: AxiosResponse | any = await axios
-      .delete(`${process.env.React_App_API_URL}/api/users/auth/libary/${id}`, {
+      .delete(`/api/users/auth/libary/${id}`, {
           withCredentials: true,
         
       })

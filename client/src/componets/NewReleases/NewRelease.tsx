@@ -15,10 +15,10 @@ const NewReleases = () => {
   const { libary }: any = useSelector((state: any) => state.libary)
 
   const handleRemoveTrack = (trackId: string) => {
-    let trackExist = newReleases.some((track: any) => track.trackId === trackId)
+    let trackExist = libary.some((track: any) => track.trackId === trackId)
 
     if (!trackExist) {
-      toast.warn('track does not exist in newReleases', {
+      toast.warn('track does not exist in new Releases', {
         position: 'top-center',
         theme: 'dark',
         autoClose: 4000,

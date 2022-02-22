@@ -1,0 +1,104 @@
+.results-con {
+  margin-block: 25px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.flex-left {
+  display: flex;
+  flex: 1;
+}
+.track-item {
+  display: flex;
+  flex: 1;
+
+  margin: 5px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+}
+
+.track-con {
+  display: flex;
+
+  border-bottom: 2px;
+  border-color: black;
+}
+
+.title-con {
+  min-width: 43%;
+}
+.album-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-con {
+  display: flex;
+  margin: 5px;
+}
+
+.album-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.album-art-icon {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.album-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'American Typewriter', serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+.lib {
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.lib-icon {
+  height: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-con {
+  min-width: 30%;
+}
+.artist-con {
+  margin: 10px;
+}
+.song-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'American Typewriter', serif;
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 10px;
+}
+.artist-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'American Typewriter', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+}

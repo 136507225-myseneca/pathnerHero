@@ -1,0 +1,63 @@
+.lib-item {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 14px;
+  padding: 10px;
+  margin-top: 16px;
+  background-color: rgb(28, 28, 28);
+  cursor: pointer;
+
+  width: 220px;
+}
+.lib-heading {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'American Typewriter', serif;
+}
+.lib-item:hover {
+  background-color: rgb(62, 60, 60);
+}
+
+.bg-ablum-art {
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+}
+.lb-track-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.lb-track-artist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  text-align: center;
+  color: white;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.lb-mg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.remove-icon {
+  height: 15px;
+}
+
+.lb-icon-con {
+  display: flex;
+  justify-content: flex-end;
+}

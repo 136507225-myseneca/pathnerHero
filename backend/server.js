@@ -18,17 +18,19 @@ connectDB()
 
 const app = express()
 
+app.set('trust proxy', 1) // trust first proxy
+
 app.use(
   session({
     secret: 'secretcode',
-    resave: true,
+    resave: false,
     saveUninitialized: true,
     proxy: true,
     name: 'token',
     cookie: {
-      sameSite: 'none',
-      secure: true,
-      httpOnly: false,
+      // sameSite: 'none',
+      // secure: true,
+      // httpOnly: false,
       maxAge: 1000 * 60 * 60 * 24 * 7, // One Week
     },
   })

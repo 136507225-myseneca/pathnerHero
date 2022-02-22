@@ -93,7 +93,7 @@ const NewReleases = () => {
                         src={Remove}
                         alt='icon'
                         className='remove-icon'
-                        onClick={() => handleRemoveTrack(track.trackId)}
+                        onClick={() => handleRemoveTrack(track.id)}
                       />
                     </div>
                   ) : (

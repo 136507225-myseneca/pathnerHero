@@ -35,6 +35,8 @@ const Header: FC<Props> = (props: Props) => {
   const [scrolled, setScrolled] = useState<boolean>(false)
   const [search, setSearch] = useState<string | null>('')
 
+  const user: any = useSelector((state: any) => state.auth.user.user)
+
   const authenticated: boolean = useSelector(
     (state: any) => state.auth.authenticated
   )
@@ -149,7 +151,7 @@ const Header: FC<Props> = (props: Props) => {
             <NavLink to='/' className='header-info'>
               <img src={Avatar} alt='avatar' className='avatar-img' />
 
-              <div className='header-name'>Tobe Segun</div>
+              <div className='header-name'>{user?.displayName}</div>
             </NavLink>
           ) : null}
         </div>
